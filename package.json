@@ -12,7 +12,7 @@
 		"socket.io": "1.0.6"
 	},
 	"devDependencies" : {
-		"stylus" : "0.47.13"
+		"stylus" : "0.47.1"
 	},
 	"scripts" : {
 		"start" : "node server.js"
