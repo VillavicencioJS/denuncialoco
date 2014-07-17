@@ -1,52 +1,52 @@
 {
-	"name" : "Denuncialo",
-	"version" : "0.0.1",
-	"description" : "App de denuncias porque #YOLO",
-	"dependencies" : {
-		"express" : "4.6.1",
-		"jade" : "1.4.2",
-		"mongoose" : "3.8.13",
-		"passport" : "0.2.0",
-		"passport-twitter" : "1.0.2",
-		"passport-facebook" : "1.0.3",
+	"name": "Denuncialo",
+	"version": "0.0.1",
+	"description": "App de denuncias porque #YOLO",
+	"dependencies": {
+		"express": "4.6.1",
+		"jade": "1.4.2",
+		"mongoose": "3.8.13",
+		"passport": "0.2.0",
+		"passport-twitter": "1.0.2",
+		"passport-facebook": "1.0.3",
 		"socket.io": "1.0.6"
 	},
-	"devDependencies" : {
-		"stylus" : "0.47.1"
+	"devDependencies": {
+		"stylus": "0.47.1"
 	},
-	"scripts" : {
-		"start" : "node server.js"
+	"scripts": {
+		"start": "node server.js"
 	},
-	"repository" : { 
-		"type" : "git",
-		"url" : "https://github.com/VillavicencioJS/denuncialoco.git"
+	"repository": { 
+		"type": "git",
+		"url": "https://github.com/VillavicencioJS/denuncialoco.git"
 	},
-	"author" : {
-		"name" : "Villavicenciojs",
-		"url" : "meetup.com/Villavicenciojs"
+	"author": {
+		"name": "Villavicenciojs",
+		"url": "meetup.com/Villavicenciojs"
 	},
-	"homepage" : "http://denuncialo.co",
-	"contributors" : [
+	"homepage": "http://denuncialo.co",
+	"contributors": [
 		{
-			"name" : "Jose",
-			"url" : "twitter.com/soybackend"
+			"name": "Jose",
+			"url": "twitter.com/soybackend"
 		},
 		{
-			"name" : "Andrea",
-			"url" : "twitter.com/andliro"
+			"name": "Andrea",
+			"url": "twitter.com/andliro"
 		},
 		{
-			"name" : "Andres",
-			"url" : "twitter.com/Andrestntx"
+			"name": "Andres",
+			"url": "twitter.com/Andrestntx"
 		},
 		{
-			"name" : "Romel",
-			"url" : "twitter.com/romelapj"
+			"name": "Romel",
+			"url": "twitter.com/romelapj"
 		}
 	],
 	"readmeFilename": "README.md",
-	"engines" : {
-		"node" : "0.10.29",
-		"npm" : "1.5.0"
+	"engines": {
+		"node": "0.10.29",
+		"npm": "1.5.0"
 	}
 }
