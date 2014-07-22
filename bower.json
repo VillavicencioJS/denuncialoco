@@ -1,0 +1,15 @@
+{
+  "name": "Denuncialo.Co",
+  "version": "0.0.1",
+  "description": "App para denuncias",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "public/vendor",
+    "test"
+  ],
+  "dependencies": {
+    "jquery": "*",
+    "normalize-css": "*"
+  }
+}

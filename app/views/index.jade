@@ -1,0 +1,7 @@
+extends layout
+
+block main
+    if(!user)
+        a(href="/auth/twitter") Login con twitter
+    else
+        h1 Bienvenido! #{user.username}

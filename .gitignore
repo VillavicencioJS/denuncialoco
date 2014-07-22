@@ -1,3 +1,5 @@
+public/vendor/*
+run.sh
 .DS_Store
 # Logs
 logs
