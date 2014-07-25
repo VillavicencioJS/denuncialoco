@@ -19,7 +19,7 @@ bower install
 
 TwitterId="" TwitterSecret="" USER="" PASSWORD="" URL="" DATABASE="" PORT="3000" node server.js
 
-##5. Adding styles
+###5. Adding styles
 
 ###Install stylus
 
@@ -29,6 +29,6 @@ npm install -g stylus
 
 stylus -w -c public/css/main.styl
 
-##6. Editing the views
+###6. Editing the views
 
 Go to app/views/index.jade
