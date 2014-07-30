@@ -1,21 +1,52 @@
 extends layout
 block main
-	header
-		h1 Bienvenido a DenunciaLo.co
-	nav
-		ul
-			li Denuncielo
-			li Asegurese
-			li Tops
-			li Tenga en Cuenta
-	section#denuncia
-		if(!user)
-			a(href="/auth/twitter") Login con twitter
-		else
-			h1 Bienvenido! #{user.username}
-			section#info-proyecto
-				article#descripcion
-					h2 DenunciaLo.Co
-					p Contenido
-				article#colaboradores
-					h2 Colaboradores
+	div#main
+		header
+			h1 Bienvenido a DenunciaLo.co
+		div#container
+			nav
+				ul
+					li 
+						a(href='#') Denuncielo
+					li 
+						a(href='#') Asegurese
+					li 
+						a(href='#') Tops Taxis
+					li 
+						a(href='#') Tenga en Cuenta
+			section#denuncia
+				if(!user)
+					div#login
+						p Debes iniciar sesión para usar la aplicación
+						a(href="/auth/facebook")
+							img(src="http://nuestramarca.com/wp-content/uploads/2014/07/btn-fb.png", alt='Login con Facebook')
+						a(href="/auth/twitter")
+							img(src='http://nuestramarca.com/wp-content/uploads/2014/07/btn-tw.png', alt='Login con Twitter')
+						a(href="/auth/google")
+							img(src='http://nuestramarca.com/wp-content/uploads/2014/07/btn-gp.png', alt='Login con Google')
+				else
+					h2 ¡ANOTE LA PLACA Y DENUNCIE!
+		article#info-proyecto
+			h3 DenunciaLo.Co
+			div#descripcion
+				include ./includes/infoproyecto.jade
+		section#colaboradores
+			h3 COLABORADORES
+			article.colaborador
+				figure
+				h4.nick @soybackend
+				p  Software developer, drummer and gamer. CTO Co-Fundo of BePlain.
+			article.colaborador
+				figure
+				h4.nick @romelapj
+				p  Software developer, drummer and gamer. CTO Co-Fundo of BePlain.
+			article.colaborador
+				figure
+				h4.nick @andrestntx
+				p  Software developer, drummer and gamer. CTO Co-Fundo of BePlain.
+			article.colaborador
+				figure
+				h4.nick @andliro
+				p  Software developer, drummer and gamer. CTO Co-Fundo of BePlain.
+
+

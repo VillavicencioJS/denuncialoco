@@ -1,2 +1,110 @@
+amarillo = #E7DE3D
+negro = #212121
+texto = #7A7A7A
+fondo = #F9F9F8
+borde = #E0E0DF
 body
-    background-color gray
+    background-color #ececec
+    font-size 16px
+    color texto
+	#container
+		padding 0 1%
+	header
+		background url(../images/header.png)
+		background-size cover
+		background-repeat no-repeat
+		color white
+		overflow hidden
+		padding 2em .7em .5em .5em
+		position relative
+		h1
+			font-size 3em
+			text-align center
+	nav
+		position relative
+		ul 
+			list-style none
+			margin 0
+			padding 0 0 0 .5em
+			li 
+				display inline-block
+				margin: 0 3% 0 0
+				border-bottom 0.2em solid negro
+				padding-bottom 0.5em
+				width 22%
+				a 
+					color black
+					display block 
+					font-size 1em  
+					padding 0.6em 0.3em 0 1em
+					text-decoration none
+					text-align center
+					font-weight bold
+	#main
+		background-color: white
+		max-width: 1080px
+	    margin: auto
+	    background-color fondo
+	section#denuncia 
+		padding 1em 2em 
+		h2
+			text-align center
+		#login
+			margin 0 15%
+			width 68%
+			p 
+				font-size 1.2em
+				text-align center
+			img 
+				width 100%
+	article#info-proyecto
+		display block
+		color negro
+		padding 1em 3em 3em 3em
+		background-color amarillo
+		h3
+			font-size 2.4em
+		p 
+			font-size 1.5em
+	section#colaboradores
+		padding 0em 2% 3em 2%
+		h3
+			font-size 3em
+			text-align center
+			margin 0.5em 0
+		article 
+			border 0.2em solid borde
+			margin-bottom 1em
+			min-height 128px
+			position relative
+			padding 1%
+			h4	
+				font-size 2em
+				margin 0
+
+@media screen and (min-width: 600px)
+	nav ul li a 
+		font-size 1.1em
+	section#denuncia #login
+		p 
+			font-size 1.6em
+		img 
+			width 70%
+			padding 0 15%
+
+@media screen and (min-width: 800px)
+	section#colaboradores
+		overflow: hidden
+		article.colaborador 
+			width 46%
+			float left
+			margin 0.5%;
+
+	nav ul li a 
+		font-size 1.5em
+
+	/*.colaborador:nth-child(1)
+		background-color red
+		margin-right 2%
+		Me gustaria hacerlo de esta forma :'(
+	*/
