@@ -27,7 +27,13 @@ block main
 							img(src='http://nuestramarca.com/wp-content/uploads/2014/07/btn-gp.png', alt='Login con Google')
 					img#taxista(src='http://sphotos-f.ak.fbcdn.net/hphotos-ak-xfa1/t1.0-9/181508_205735772773909_5375121_n.jpg', alt = 'Mal Taxista')
 				else
-					h2 ¡ANOTE LA PLACA Y DENUNCIE!
+					form#denuncia
+						h2 
+							span ¡ANOTE LA PLACA Y DENUNCIE!
+						input(type='text' name='placa' placeholder='Numero de placa' requerid)
+						input(type='text' name='tipo' placeholder='Tipo de abuso')
+						textarea(name='detalle' placeholder='Detalle')
+						input(type='button' value='ENVIAR')
 		article#info-proyecto
 			h3 DenunciaLo.Co
 			div#descripcion
@@ -35,20 +41,24 @@ block main
 		section#colaboradores
 			h3 COLABORADORES
 			article.colaborador
-				figure
+				figure.imagen_item
+					img(src='https://pbs.twimg.com/profile_images/486117967370153984/VSLSJmZ3.jpeg' alt='soybackend')
 				h4.nick @soybackend
-				p  Software developer, drummer and gamer. CTO Co-Fundo of BePlain.
+				p  Software developer, drummer and gamer. CTO Co-Funder of Beplain. Backend at JetApps. Organizer of @VillavicencioJS. Thanks for all God 
 			article.colaborador
-				figure
+				figure.imagen_item
+					img(src='https://pbs.twimg.com/profile_images/486893339686752256/SVqCnAJe.jpeg' alt='soybackend')
 				h4.nick @romelapj
-				p  Software developer, drummer and gamer. CTO Co-Fundo of BePlain.
+				p  Amante de la tecnologia, con el firme compromiso de demostrar su gran valor y como con ella mejorar nuestra forma de vivir.
 			article.colaborador
-				figure
+				figure.imagen_item
+					img(src='https://pbs.twimg.com/profile_images/494038910444781569/I2VpJwaW.jpeg' alt='soybackend')
 				h4.nick @andrestntx
-				p  Software developer, drummer and gamer. CTO Co-Fundo of BePlain.
+				p  Mi mente y mi corazón están llenos de emprendimiento, pero se que necesito un equipo, uno que sienta lo mismo. - Te animas?
 			article.colaborador
-				figure
+				figure.imagen_item
+					img(src='https://pbs.twimg.com/profile_images/473582478364397569/8bgtVC7J.jpeg' alt='soybackend')
 				h4.nick @andliro
-				p  Software developer, drummer and gamer. CTO Co-Fundo of BePlain.
+				p  Ingeniera de Sistemas... Comunicadora Gráfica... Emprendedora de corazón y con pasión. - Com·plott -
 
 
