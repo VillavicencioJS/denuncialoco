@@ -2,7 +2,8 @@ extends layout
 block main
 	div#main
 		header
-			h1 Bienvenido a DenunciaLo.co
+			img(src='http://nuestramarca.com/wp-content/uploads/2014/07/principal.png', alt='Login con Google')
+			h1 Bienvenido a 
 		div#container
 			nav
 				ul
@@ -17,13 +18,14 @@ block main
 			section#denuncia
 				if(!user)
 					div#login
-						p Debes iniciar sesión para usar la aplicación
+						p Debes iniciar sesión para el envío de información
 						a(href="/auth/facebook")
 							img(src="http://nuestramarca.com/wp-content/uploads/2014/07/btn-fb.png", alt='Login con Facebook')
 						a(href="/auth/twitter")
 							img(src='http://nuestramarca.com/wp-content/uploads/2014/07/btn-tw.png', alt='Login con Twitter')
 						a(href="/auth/google")
 							img(src='http://nuestramarca.com/wp-content/uploads/2014/07/btn-gp.png', alt='Login con Google')
+					img#taxista(src='http://sphotos-f.ak.fbcdn.net/hphotos-ak-xfa1/t1.0-9/181508_205735772773909_5375121_n.jpg', alt = 'Mal Taxista')
 				else
 					h2 ¡ANOTE LA PLACA Y DENUNCIE!
 		article#info-proyecto
